@@ -9,4 +9,13 @@ class PlayersController < ApplicationController
         end
         render json: @players
     end
+
+    def show
+        @player_record = Player.includes(:batting, :pitching).find(params[:id])
+        @player = @player_record.attributes.merge(
+            'batting' => @player_record.batting,
+            'pitching' => @player_record.pitching
+        )
+        render json: @player
+    end
 end

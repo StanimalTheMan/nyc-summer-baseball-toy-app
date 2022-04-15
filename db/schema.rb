@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_14_045405) do
+ActiveRecord::Schema.define(version: 2022_04_15_012921) do
 
   create_table "battings", force: :cascade do |t|
     t.integer "G"
@@ -44,6 +44,39 @@ ActiveRecord::Schema.define(version: 2022_04_14_045405) do
     t.index ["player_id"], name: "index_battings_on_player_id"
   end
 
+  create_table "pitchings", force: :cascade do |t|
+    t.integer "G"
+    t.integer "GS"
+    t.integer "W"
+    t.integer "L"
+    t.integer "SV"
+    t.integer "CG"
+    t.integer "GF"
+    t.float "IP"
+    t.integer "BF"
+    t.integer "H"
+    t.integer "R"
+    t.integer "ER"
+    t.integer "BB"
+    t.integer "K"
+    t.integer "HBP"
+    t.integer "doubles"
+    t.integer "triples"
+    t.integer "HR"
+    t.float "RA"
+    t.float "ERA"
+    t.float "WHIP"
+    t.float "FIP"
+    t.float "walks_per_nine"
+    t.float "k_per_nine"
+    t.float "BABIP"
+    t.float "BAA"
+    t.integer "player_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["player_id"], name: "index_pitchings_on_player_id"
+  end
+
   create_table "players", force: :cascade do |t|
     t.string "name"
     t.string "team"
@@ -52,4 +85,5 @@ ActiveRecord::Schema.define(version: 2022_04_14_045405) do
   end
 
   add_foreign_key "battings", "players"
+  add_foreign_key "pitchings", "players"
 end

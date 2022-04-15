@@ -1,0 +1,57 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  G: 1
+  GS: 1
+  W: 1
+  L: 1
+  SV: 1
+  CG: 1
+  GF: 1
+  IP: 1.5
+  BF: 1
+  H: 1
+  R: 1
+  ER: 1
+  BB: 1
+  K: 1
+  HBP: 1
+  doubles: 1
+  triples: 1
+  HR: 1
+  RA: 1.5
+  ERA: 1.5
+  WHIP: 1.5
+  FIP: 1.5
+  walks_per_nine: 1.5
+  k_per_nine: 1.5
+  BABIP: 1.5
+  BAA: 1.5
+
+two:
+  G: 1
+  GS: 1
+  W: 1
+  L: 1
+  SV: 1
+  CG: 1
+  GF: 1
+  IP: 1.5
+  BF: 1
+  H: 1
+  R: 1
+  ER: 1
+  BB: 1
+  K: 1
+  HBP: 1
+  doubles: 1
+  triples: 1
+  HR: 1
+  RA: 1.5
+  ERA: 1.5
+  WHIP: 1.5
+  FIP: 1.5
+  walks_per_nine: 1.5
+  k_per_nine: 1.5
+  BABIP: 1.5
+  BAA: 1.5
